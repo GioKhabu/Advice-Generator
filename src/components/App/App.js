@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <main className="App-header">
         <h1>ADVICE # {data && data?.slip.id}</h1>
         <p>{`“${data && data?.slip.advice}”`}</p>
         <div className="line-button-wrapper">
@@ -33,7 +33,7 @@ function App() {
             <img src={dice} alt="dice" />
           </button>
         </div>
-      </header>
+      </main>
     </div>
   );
 }

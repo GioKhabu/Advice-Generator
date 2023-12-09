@@ -20,6 +20,7 @@ p {
   flex-basis: 37.5%;
   flex-shrink: 1;
   min-width: 343px;
+  min-height: 332px;
   margin: 0 16px;
   display: flex;
   flex-direction: column;
