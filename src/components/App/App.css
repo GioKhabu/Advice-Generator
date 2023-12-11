@@ -10,26 +10,29 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 2;
   width: 100vw;
   height: 100vh;
   background-color: #202733;
 }
 
 .App-header {
-  flex-basis: 37.5%;
-  flex-shrink: 1;
+  flex-shrink: 0;
   min-width: 343px;
+  max-width: 540px;
   min-height: 332px;
   margin: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   border-radius: 15px;
   background: var(--Dark-Grayish-Blue, #313a48);
   box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+.text-wrapper {
+  width: 100%;
 }
 
 h1 {
@@ -57,6 +60,18 @@ p {
   font-weight: 800;
   line-height: normal;
   letter-spacing: -0.3px;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 11px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .App-header {
+  flex-shrink: 1;
+}
 }
 
 .line-button-wrapper {
@@ -109,8 +124,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  margin-top: 56px;
+  margin-bottom: -32px;
   cursor: pointer;
 }
 
